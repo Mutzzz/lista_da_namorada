@@ -1,4 +1,6 @@
 const form = document.getElementById('form-lista');
+const bodyLista = document.getElementById('body-lista');
+const listContents = document.getElementById('list-contents')
     let linhas = '';
 
 form.addEventListener('submit', function(e){
@@ -7,6 +9,9 @@ form.addEventListener('submit', function(e){
     atualizaTabela();
 });
 
+$('#toggle-button').click(function() {
+    $('#list-contents').slideToggle();
+});
 
 function adicionaLinha() {
     const nomeTrem = document.getElementById('trem');

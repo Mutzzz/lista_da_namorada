@@ -20,53 +20,41 @@
 <br>
         <button type="submit" id="enviar">Enviar</button>
     </form>
+    <button id="toggle-button">Toggle List</button>
     <table>
         <thead>
             <tr>
-                <th>
-                    Lista de coisas para comprar
-                </th>
-                <th>
-                    Links
-                </th>
+                <th>Lista de coisas para comprar</th>
+                <th>Links</th>
             </tr>
-
         </thead>
-        <tbody>
+        <tbody id="body-lista">
             <tr>
-                <th>
-                    Memória DDR4 Kingston Fury SuperFrame, 8GB, 3200Mhz
-                </th>
-                <th>
-                    <a href="https://www.terabyteshop.com.br/produto/23095/memoria-ddr4-kingston-fury-superframe-8gb-3200mhz-black-kf432c16bb8cl" target="_blank">Ram</a>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    Placa de Vídeo MSI NVIDIA GeForce RTX 3060 VENTUS 2X OC
-                </th>   
-                <th>
-                    <a href="https://www.terabyteshop.com.br/produto/20438/placa-de-video-msi-geforce-rtx-3060-ventus-2x-oc-lhr-12gb-gddr6-dlss-ray-tracing-912-v397-050" target="_blank">Placa de vídeo</a>
-                </th>           
-            </tr>
-            <tr>
-                <th>
-                    SSD Hikvision C100 960GB
-                </th>
-                <th>
-                    <a href="https://www.terabyteshop.com.br/produto/13437/ssd-hikvision-hs-c100-960gb" target="_blank">SSD</a>
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>
-
+                <td colspan="2">
+                    <div id="list-contents">
+                        <table>
+                            <tr>
+                                <td>Memória DDR4 Kingston Fury SuperFrame, 8GB, 3200Mhz</td>
+                                <td><a href="https://www.terabyteshop.com.br/produto/23095/memoria-ddr4-kingston-fury-superframe-8gb-3200mhz-black-kf432c16bb8cl" target="_blank">Ram</a></td>
+                            </tr>
+                            <tr>
+                                <td>Placa de Vídeo MSI NVIDIA GeForce RTX 3060 VENTUS 2X OC</td>   
+                                <td><a href="https://www.terabyteshop.com.br/produto/20438/placa-de-video-msi-geforce-rtx-3060-ventus-2x-oc-lhr-12gb-gddr6-dlss-ray-tracing-912-v397-050" target="_blank">Placa de vídeo</a></td>           
+                            </tr>
+                            <tr>
+                                <td>SSD Hikvision C100 960GB</td>
+                                <td><a href="https://www.terabyteshop.com.br/produto/13437/ssd-hikvision-hs-c100-960gb" target="_blank">SSD</a></td>
+                            </tr>
+                        </table>
+                    </div>
                 </td>
             </tr>
-        </tfoot>
+        </tbody>
     </table>
-    </div>    
+    
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="script.js"></script>  
 </body>
-<script src="script.js"></script>
+
 </html>
